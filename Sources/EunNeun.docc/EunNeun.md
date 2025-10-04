@@ -1,5 +1,8 @@
 # EunNeun
 
+ [![Swift](https://img.shields.io/badge/Swift-5.7%2B-orange)](https://swift.org)
+ [![Platforms](https://img.shields.io/badge/지원-iOS%2013%2B%20%7C%20macOS%2010.15%2B%20%7C%20watchOS%206%2B%20%7C%20tvOS%2013%2B-blue)](#compatibility)
+
 한국어 조사 자동 선택을 위한 Swift 라이브러리
 
 ## Overview

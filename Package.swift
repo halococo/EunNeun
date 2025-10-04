@@ -17,7 +17,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "EunNeun"
+            name: "EunNeun",
+            resources: [
+                    .process("EunNeun.docc")
+            ]
         ),
         .testTarget(
             name: "EunNeunTests",
