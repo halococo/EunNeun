@@ -1,8 +1,8 @@
-# 📦 EunNeun 🇰🇷
+# EunNeun 🇰🇷
 
 > 한국어 조사, 이제 걱정 끝!  
 > 헷갈리던 조사 선택을 대신 해드립니다.  
-> `"사과".kParticle(.을를)` → `"사과를"` 👏
+> `"사과".kParticle(.을를)` → `"사과를"` 
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/halococo/EunNeun/releases)
 [![Swift](https://img.shields.io/badge/Swift-5.7%2B-orange.svg)](https://swift.org)
@@ -12,7 +12,7 @@
 
 ---
 
-## 💡 EunNeun은 어떤 라이브러리인가요?
+## EunNeun은 어떤 라이브러리인가요?
 
 문자열에 `.kParticle(...)` 메서드를 호출하면,  
 **받침 유무와 특수 규칙(예: ㄹ 받침, 괄호 등)을 자동 판별**하여  
@@ -23,7 +23,7 @@
 
 ---
 
-## ❓ 이런 경험 있으시죠?
+## 이런 경험 있으시죠?
 
 ```swift
 // 헷갈리는 조사들...
@@ -41,7 +41,7 @@ if word.last == "ㄹ" && particleType == "으로/로" {
 
 ---
 
-## ✅ 이제 이렇게 간단하게!
+## 이제 이렇게 간단하게!
 
 ```swift
 // 👇 잊지 말고!
@@ -56,7 +56,7 @@ let message = "\(userName.kParticle(.이가)) \(itemName.kParticle(.을를)) 획
 
 ---
 
-## 🧠 왜 EunNeun인가요?
+## 왜 EunNeun인가요?
 
 - **정확성**
   - 유니코드 기반 받침 분석
@@ -73,7 +73,7 @@ let message = "\(userName.kParticle(.이가)) \(itemName.kParticle(.을를)) 획
 
 ---
 
-## 📦 설치
+## 설치
 
 ### Swift Package Manager
 
@@ -89,11 +89,11 @@ dependencies: [
 - File → Add Package Dependencies →  
   `https://github.com/halococo/EunNeun`
 
-> ⚠️ Swift 5.7+, Xcode 14.0+ 환경 권장
+> Swift 5.7+, Xcode 14.0+ 환경 권장
 
 ---
 
-## ⚡️ 1분만에 배우기
+## 1분만에 배우기
 
 ```swift
 import EunNeun
@@ -111,7 +111,7 @@ print("\(user.kParticle(.이가)) \(item.kParticle(.을를)) 맛있어요")
 
 ---
 
-## 🎮 실전 활용 예제
+## 실전 활용 예제
 
 ### 게임 메시지
 ```swift
@@ -137,7 +137,7 @@ func createNotification(friend: String, action: String) -> String {
 
 ---
 
-## 🧩 지원하는 조사 종류
+## 지원하는 조사 종류
 
 | 조사 | 예시 |
 |------|------|
@@ -150,16 +150,16 @@ func createNotification(friend: String, action: String) -> String {
 
 ---
 
-## ✨ 고급 기능
+## 고급 기능
 
-### ✅ ㄹ 받침 자동 처리
+### ㄹ 받침 자동 처리
 ```swift
 "물".kParticle(.으로로)   // "물로"
 "길".kParticle(.으로로)   // "길로"
 "집".kParticle(.으로로)   // "집으로"
 ```
 
-### ✅ 스마트 tail 정리
+### 스마트 tail 정리
 ```swift
 "\"사과\"".kParticle(.을를)         // "\"사과\"를"
 "(책)".kParticle(.이가)             // "(책)이"
@@ -170,7 +170,7 @@ func createNotification(friend: String, action: String) -> String {
 
 ---
 
-## 🛠 동작 원리
+## 동작 원리
 
 - 유니코드 한글 범위: U+AC00 ~ U+D7A3
 - 종성(받침) 판별 공식:
@@ -183,7 +183,7 @@ let isRieul = (offset % 28) == 8
 
 ---
 
-## 📋 시스템 요구사항
+## 시스템 요구사항
 
 - Swift 5.7+
 - iOS 13.0+, macOS 10.15+, watchOS 6.0+, tvOS 13.0+
@@ -191,7 +191,7 @@ let isRieul = (offset % 28) == 8
 
 ---
 
-## ⚠️ 참고 사항
+## 참고 사항
 
 - “마지막 단어” 기준으로 조사 판별
 - 한글 외 문자열은 받침 없는 것으로 간주
@@ -200,14 +200,14 @@ let isRieul = (offset % 28) == 8
 
 ---
 
-## 🙌 기여하기
+## 기여하기
 
 - 기능 제안: [GitHub Discussions](https://github.com/halococo/EunNeun/discussions)
 - 버그 제보: [GitHub Issues](https://github.com/halococo/EunNeun/issues)
 
 ---
 
-## 📄 라이선스
+## 라이선스
 
 MIT License © 2025 [Byul Kang](mailto:halococoa@gmail.com)  
 See [LICENSE](./LICENSE) for details.
