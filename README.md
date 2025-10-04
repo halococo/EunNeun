@@ -4,7 +4,7 @@
 > 헷갈리던 조사 선택을 대신 해드립니다.  
 > `"사과".kParticle(.을를)` → `"사과를"` 
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/halococo/EunNeun/releases)
+[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](https://github.com/halococo/EunNeun/releases)
 [![Swift](https://img.shields.io/badge/Swift-5.7%2B-orange.svg)](https://swift.org)
 [![Platform](https://img.shields.io/badge/Platform-iOS%2013%2B%20|%20macOS%2010.15%2B%20|%20watchOS%206%2B%20|%20tvOS%2013%2B-lightgrey.svg)](https://developer.apple.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -81,7 +81,7 @@ let message = "\(userName.kParticle(.이가)) \(itemName.kParticle(.을를)) 획
 // Package.swift
 // swift-tools-version:5.7
 dependencies: [
-    .package(url: "https://github.com/halococo/EunNeun", from: "1.0.0")
+    .package(url: "https://github.com/halococo/EunNeun", from: "1.0.2")
 ]
 ```
 
